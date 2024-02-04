@@ -1,3 +1,40 @@
-[gd_scene format=3 uid="uid://spu6bneu2k6k"]
+[gd_scene load_steps=3 format=3 uid="uid://spu6bneu2k6k"]
+
+[ext_resource type="Texture2D" uid="uid://ck66pfhxw76vl" path="res://game/tempBackground.png" id="1_5b7ca"]
+[ext_resource type="Texture2D" uid="uid://cnd7oh63s1bxs" path="res://game/brownbag.png" id="2_efvyp"]
 
 [node name="Game" type="Node2D"]
+
+[node name="Option 3" type="Button" parent="."]
+offset_left = 341.0
+offset_top = 328.0
+offset_right = 398.0
+offset_bottom = 359.0
+text = "USE"
+
+[node name="Option 2" type="Button" parent="."]
+offset_left = 244.0
+offset_top = 329.0
+offset_right = 301.0
+offset_bottom = 360.0
+text = "USE"
+
+[node name="Option 1" type="Button" parent="."]
+offset_left = 146.0
+offset_top = 329.0
+offset_right = 203.0
+offset_bottom = 360.0
+text = "USE"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(265, 224)
+scale = Vector2(1.26358, 1.26358)
+texture = ExtResource("1_5b7ca")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(59, 316)
+scale = Vector2(0.155, 0.155)
+texture = ExtResource("2_efvyp")
